@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@GoodCybersecurity 
+GoodCybersecurity
+/
+CxFlowGitHub
+Public
+Cannot fork because you own this repository and are not a member of any organizations.
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+CxFlowGitHub/.github/workflows/main.yml
+@GoodCybersecurity
+GoodCybersecurity Update main.yml
+Latest commit 1e21286 52 minutes ago
+ History
+ 1 contributor
+52 lines (46 sloc)  1.99 KB
+
 # This is a basic workflow to help you get started with Actions
 name: CxFlow
 
@@ -45,8 +76,10 @@ jobs:
           #preset: # optional, default is Checkmarx Default
           # Break build based on Checkmarx findings?
           #break_build: # optional
+          bug_tracker: Github
           # Incremental Scans?
           incremental: true
           # GitHub API Token (note: you don't have to create secrets.GITHUB_TOKEN, it is created automatically and will not appear in your repo's custom secrets)
-          github_token: ${{secrets.TOKEN}}
+          github_token: ${{secrets.GITHUB_TOKEN}}
        
+CxFlowGitHub/main.yml at master · GoodCybersecurity/CxFlowGitHub
