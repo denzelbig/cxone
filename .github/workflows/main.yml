@@ -29,7 +29,6 @@ jobs:
         with:
           # Provide Checkmarx URL
           checkmarx_url: ${{secrets.CHECKMARX_URL}}
-          checkmarx_tenant: ${{secrets.TENANT}}
           # Provide team
           team: /CxServer/SP/Company
           # Provide Checkmarx Username
